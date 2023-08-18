@@ -42,4 +42,35 @@ export default function Projects() {
             repo: `https://github.com/Pandax19/note-taker`
         },
     ]
+
+
+return (
+
+ <>
+    <h1>Projects Page</h1>
+    <div className='card' >
+        {projects.map((project, i) = (
+            <section id={'proj'+i} className='add-margin card my-card' key={i}>
+                <div className='card-image'>
+                    <figure className='proj-image'>
+                        <img src={project.img} alt='PLaceholder image' className='rando'/>
+                    </figure>
+                </div>
+                <div className='card-content'>
+                    <div className='media-content'>
+                        <p className="title">{project.name}</p>
+                        </div>
+                </div>
+                <div className='content'>
+                    {project.description}
+                    <br />
+                    <a href={project.repo}>GitHub Repo</a> <a href={project.deployment}>Deployed Page</a>
+                    <br />
+                    </div>
+                    </section>
+            ))}
+        </div>
+    </>
+    )
+
 }
