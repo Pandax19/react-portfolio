@@ -49,11 +49,11 @@ return (
  <>
     <h1>Projects Page</h1>
     <div className='card' >
-        {projects.map((project, i) = (
+        {projects.map((projects, i) => (
             <section id={'proj'+i} className='add-margin card my-card' key={i}>
                 <div className='card-image'>
                     <figure className='proj-image'>
-                        <img src={project.img} alt='PLaceholder image' className='rando'/>
+                        <img src={projects.img} alt='PLaceholder image' className='rando'/>
                     </figure>
                 </div>
                 <div className='card-content'>

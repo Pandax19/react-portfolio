@@ -5,7 +5,7 @@ import Projects from './components/projects'
 import Contact from './components/contact'
 import './App.css'
 
-function App() {
+export default function App() {
   const [currentPage, setCurrentPage] = useState('About')
 
   const renderPage = () => {
