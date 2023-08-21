@@ -1,4 +1,4 @@
-import Face from "../assets/images/my-face.jpg"
+import Face from "../../../assets/images/my-face.jpg"
 
 export default function About(){
     return(

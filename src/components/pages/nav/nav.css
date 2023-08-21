@@ -1,10 +1,10 @@
-.nav {
+.navBar {
     background-color: black;
     color:white;
     padding:10px;
 }
 
-.nav-list{
+.navBar{
     list-style: none;
     display: flex;
 }
@@ -17,4 +17,11 @@
 nav-item a {
     text-decoration: underline;
     color: white;
+}
+
+.Btn{
+    width:20px;
+    height:20px;
+    background-color: purple;
+    
 }

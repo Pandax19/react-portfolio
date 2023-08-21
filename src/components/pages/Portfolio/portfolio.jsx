@@ -1,11 +1,9 @@
-import kryptKeeper from '../assets/images/kk-faves.jpg'
-import Otr from '../assets/images/OTRsnap.jpg'
-import Planner from '../assets/images/planner.jpg'
-import Zelda from '../assets/images/zeldaq2.jpg'
-import Note from '../assets/images/note-taker1.jpg'
+import { useState } from 'react';
+// import Project from '../projects/projects'
 
-export default function Projects() {
-    const projects = [
+
+export default function Portfolio() {
+    const [ projects ] = useState ([
         {
             name: `Krypt Keeper`,
             description: `Find haunted events near you using Zip Code`,
@@ -41,36 +39,33 @@ export default function Projects() {
             img: Note,
             repo: `https://github.com/Pandax19/note-taker`
         },
-    ]
+    ]);
 
-
-return (
-
- <>
-    <h1>Projects Page</h1>
-    <div className='card' >
-        {projects.map((projects, i) => (
-            <section id={'proj'+i} className='add-margin card my-card' key={i}>
-                <div className='card-image'>
-                    <figure className='proj-image'>
-                        <img src={projects.img} alt='PLaceholder image' className='rando'/>
-                    </figure>
-                </div>
-                <div className='card-content'>
-                    <div className='media-content'>
-                        <p className="title">{project.name}</p>
-                        </div>
-                </div>
-                <div className='content'>
-                    {project.description}
-                    <br />
-                    <a href={project.repo}>GitHub Repo</a> <a href={project.deployment}>Deployed Page</a>
-                    <br />
-                    </div>
-                    </section>
-            ))}
+    const { name, repo, link, description } = projects;
+    return (
+        <div>
+            <div className='flex-row'>
+                {projects.map((project, idx) => (
+                       <div className="project" key={idx}>
+                       <img
+                         src={project[project.name]}
+                         alt={removeHyphensAndCapitalize(name)}
+                         className="project-bg"
+                       />
+                       <div className="project-text">
+                         <h3>
+                           <a href={link}>{removeHyphensAndCapitalize(name)}</a>
+                           &nbsp;
+                           <a href={repo}>
+                             <i className="fab fa-github" />
+                           </a>
+                         </h3>
+                         <p>{description}</p>
+                       </div>
+                     </div>
+                    
+                ))}
+            </div>
         </div>
-    </>
-    )
-
-}
+    );
+};
