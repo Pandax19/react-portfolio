@@ -16,7 +16,7 @@ import App from './App.jsx';
 import Error from '../src/components/pages/errorPage/error.jsx';
 import About from './components/pages/about/about.jsx';
 import Contact from './components/pages/contact/contact.jsx';
-import Projects from './components/pages/projects/projects.jsx';
+import Projects from './components/pages/Portfolio/portfolio.jsx';
 import './index.css';
 
 
