@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: black;
+  background-image: url(./assets/images/plants.jpg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,7 +20,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #5810c3;
 }
 
 body {
@@ -57,14 +57,16 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: black;
+    background-color: black;
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: black;
+    opacity:100;
+
   }
 }
 
@@ -74,13 +76,13 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: white;
   --secondary: #31343D;
   --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #799FBA;
-  --darker: #1F3B60;
-  --alpha: rgba(255,255,255,.7);
+  --light: white;
+  --dark: black;
+  --darker: rgba(74, 75, 74, 0.323);
+  --alpha: black;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -118,12 +120,13 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  color: white;
 }
 
 h1 {
   font-size: 5rem;
   margin: 50px 20px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 10px rgba(3, 55, 22, 0.5);
 }
 
 h2 {
@@ -153,9 +156,9 @@ p {
 }
 
 a {
-  color: var(--light);
-  text-decoration: none;
-  opacity: .5;
+  color: black;
+  text-decoration: underline;
+  opacity: 5;
 }
 
 a:hover {
@@ -177,7 +180,7 @@ button {
   text-decoration: none;
   border-radius: 0.5rem;
   border: none;
-  color: #fff;
+  color: black;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
@@ -250,8 +253,8 @@ header img {
   top: 0;
   left: 0;
   height: auto;
-  filter: sepia(1) opacity(60%);
-  opacity: 0.5;
+  filter: opacity(100%);
+  /* opacity: 100; */
 }
 
 nav {
@@ -298,7 +301,7 @@ footer a:hover {
 textarea {
   width: 600px;
   height: 200px;
-  border: 3px solid #cccccc;
+  border: 3px solid black;
   padding: 5px;
   margin-top: 10px;
 }
@@ -400,7 +403,7 @@ textarea {
     right: 0px;
     padding: 50px;
     z-index: 900;
-    opacity: 0;
+    opacity: 0.5;
     transition: all .5s ease-in-out;
 }
 
