@@ -28,7 +28,7 @@ react portfolio
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ![Screenshot](./src/assets/images/port-pic.JPG)
-![Screenshot](./src/assets/images/port-pic2.JPG)
+![Screenshot](./src/assets/images/port-pics.JPG)
 ![Screenshot](./src/assets/images/proj-pics.JPG)
 
 https://github.com/Pandax19/react-portfolio
