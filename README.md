@@ -29,6 +29,7 @@ react portfolio
 
 ![Screenshot](./src/assets/images/port-pic.JPG)
 ![Screenshot](./src/assets/images/port-pic2.JPG)
+![Screenshot](./src/assets/images/proj-pics.JPG)
 
 https://github.com/Pandax19/react-portfolio
 https://amandas-portfolio-6ba86fbed346.herokuapp.com/

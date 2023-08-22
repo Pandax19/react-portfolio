@@ -53,8 +53,7 @@ export default function Portfolio() {
                 {projects.map((project, idx) => (
                        <div className="project" key={idx}>
                        <img
-                         src={project[project.name]}
-                         alt={removeHyphensAndCapitalize(project.name)}
+                         src={project.img}
                          className="project-bg"
                        />
                        <div className="project-text">
