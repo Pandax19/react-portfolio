@@ -1,14 +1,4 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-// import './index.css'
 
-
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-// )
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -16,7 +6,7 @@ import App from './App.jsx';
 import Error from '../src/components/pages/errorPage/error.jsx';
 import About from './components/pages/about/about.jsx';
 import Contact from './components/pages/contact/contact.jsx';
-import Projects from './components/pages/Portfolio/portfolio.jsx';
+import Portfolio from './components/pages/Portfolio/portfolio.jsx';
 import './index.css';
 
 
@@ -31,8 +21,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: 'projects',
-        element: <Projects />,
+        path: 'portfolio',
+        element: <Portfolio />,
       },
       {
         path: 'contact',

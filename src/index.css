@@ -17,11 +17,10 @@
 a {
   font-weight: 500;
   color: black;
+  opacity: 20%;
   text-decoration: inherit;
 }
-a:hover {
-  color: #5810c3;
-}
+
 
 body {
   margin: 100;
@@ -65,7 +64,7 @@ button:focus-visible {
   }
   button {
     background-color: black;
-    opacity:100;
+    opacity:50;
 
   }
 }
@@ -78,24 +77,13 @@ main {
 :root {
   --primary: white;
   --secondary: #31343D;
-  --tertiary: #b12704;
   --light: white;
   --dark: black;
   --darker: rgba(74, 75, 74, 0.323);
   --alpha: black;
-  --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  min-height: 100%;
 }
 
 body {
@@ -167,7 +155,12 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  background-image:('./assets/images/plants.jpg');
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
 }
 
 header a {
@@ -199,10 +192,6 @@ button[disabled] {
   opacity: 0.8;
 }
 
-img {
-  max-width: 100%;
-}
-
 span[role='img'] {
   cursor: default;
 }
@@ -222,10 +211,6 @@ input {
   transition: box-shadow 0.2s;
 }
 
-input:focus {
-  border: 1px solid var(--secondary);
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
-}
 
 label {
   margin-right: 10px;
@@ -233,13 +218,6 @@ label {
 
 li {
   list-style: none;
-}
-
-header {
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
 }
 
 header h1 {
@@ -274,14 +252,6 @@ nav li {
   margin: 0 50px;
 }
 
-ul.skills {
-  line-height: 2rem;
-}
-
-ul.skills li {
-  list-style-type: circle;
-}
-
 footer {
   font-size: 48px;
   justify-content: center;
@@ -306,86 +276,30 @@ textarea {
   margin-top: 10px;
 }
 
-.container {
+/* .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .flex-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.space-between {
-  justify-content: space-between;
-}
-
-.flex-end {
-  justify-content: flex-end;
-}
-
-.flex-center {
-  justify-content: center;
-}
-
-.mx-1 {
-  margin-right: var(--spacing-one);
-  margin-left: var(--spacing-one);
-}
-
-.mx-2 {
-  margin-right: var(--spacing-two);
-  margin-left: var(--spacing-two);
-}
-
-.my-1 {
-  margin-top: var(--spacing-one);
-  margin-bottom: var(--spacing-one);
-}
-
-.my-2 {
-  margin-top: var(--spacing-two);
-  margin-bottom: var(--spacing-two);
-}
-
-.my-5 {
-  margin-top: var(--spacing-five);
-  margin-bottom: var(--spacing-five);
-}
-
-.px-1 {
-  padding-right: var(--spacing-one);
-  padding-left: var(--spacing-one);
-}
-
-.px-2 {
-  padding-right: var(--spacing-two);
-  padding-left: var(--spacing-two);
-}
-
-.py-1 {
-  padding-top: var(--spacing-one);
-  padding-bottom: var(--spacing-one);
-}
-
-.py-2 {
-  padding-top: var(--spacing-two);
-  padding-bottom: var(--spacing-two);
-}
 
 .card {
-  width: 25%;
+  width: 50%;
   text-align: center;
+  
 }
 
 .project {
+  display: flex;
   position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  margin: 30px;
+  max-width: 60%;
+  margin: 20px;
 }
 
 .project-bg {
@@ -396,16 +310,16 @@ textarea {
 
 .project-text {
     color: var(--secondary);
-    position: absolute;
+    position: relative;
     top: 0px;
     bottom: 0px;
-    left: 0px;
+    left: 40px;
     right: 0px;
-    padding: 50px;
-    z-index: 900;
-    opacity: 0.5;
+    padding: 10px;
+    opacity: 80%;
     transition: all .5s ease-in-out;
 }
+
 
 .project-text:hover {
   background-color: var(--alpha);
@@ -413,26 +327,24 @@ textarea {
   border: 10px solid var(--secondary);
 }
 
-.project-text h3 {
-  font-size: 2.5rem;
-}
-
 .project-text a {
   text-decoration: none;
   font-weight: bold;
   color: var(--dark);
   transition: all .3s ease-in-out;
+  width: 100%;
 }
 
 .project-text a:hover {
   color: var(--darker);
 }
 
-.navActive {
+/* .navActive {
   color: var(--secondary);
   cursor: default;
   text-shadow: 3px 3px 15px rgba(255,255,255, .5);
-}
+} */
+
 @media only screen and (max-width: 1300px) {
   nav {
     position: static;
@@ -462,4 +374,9 @@ textarea {
     text-align: center;
     font-size: 2.3rem;
  }
+}
+
+.navBar{
+  padding: 5px;
+  top:5px;
 }
