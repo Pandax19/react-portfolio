@@ -1,6 +1,6 @@
 import React from "react";
+import { useState } from "react";
 import kryptKeeper from "../../../assets/images/kk-faves.jpg";
-import Planner from "../../../assets/images/planner.jpg";
 import Otr from "../../../assets/images/OTRsnap.jpg";
 import Zelda from "../../../assets/images/zeldaq2.jpg";
 import Note from "../../../assets/images/note-taker1.jpg";
@@ -9,12 +9,12 @@ import { removeHyphensAndCapitalize } from "../../../utils/helpers";
 
  
 export default function Portfolio() {
-  const projects = [
+  const [projects] = useState([
     {
       name: "Hive",
       description: "add games you've played to your profile and leave reviews",
       deployment: 'https://hive1-03d1291901c2.herokuapp.com/',
-      img: x,
+      // img: x,
       repo: 'https://github.com/blickenderfer/hive',
     },
     
@@ -46,7 +46,7 @@ export default function Portfolio() {
       img: Note,
       repo: `https://github.com/Pandax19/note-taker`,
     },
-  ];
+  ]);
   
     return (
       <>
